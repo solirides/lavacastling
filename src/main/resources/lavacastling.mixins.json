@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "litholark.lavacastling.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"CobbleGen",
+		"StoneGen"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
