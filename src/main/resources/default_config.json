@@ -14,7 +14,7 @@
       "maxY": 1000
     },
     {
-      "id": "minecraft:cobbled_deepslate",
+      "id": "minecraft:deepslate",
       "minY": -1000,
       "maxY": 0
     }
@@ -22,7 +22,7 @@
   "chisel_blocks": [
     ["minecraft:stone","minecraft:stone_bricks","minecraft:chiseled_stone_bricks"],
     ["minecraft:blackstone","minecraft:polished_blackstone","minecraft:polished_blackstone_bricks","minecraft:chiseled_polished_blackstone"],
-    ["minecraft:cobbled_deepslate","minecraft:polished_deepslate","minecraft:deepslate_bricks","minecraft:deepslate_tiles","minecraft:chiseled_deepslate"]
+    ["minecraft:deepslate","minecraft:polished_deepslate","minecraft:deepslate_bricks","minecraft:deepslate_tiles","minecraft:chiseled_deepslate"]
   ],
   "unused": [
     ["minecraft:sandstone","minecraft:smooth_sandstone","minecraft:cut_sandstone","minecraft:chiseled_sandstone"]

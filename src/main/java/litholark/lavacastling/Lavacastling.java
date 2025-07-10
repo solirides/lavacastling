@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.networking.v1.PacketSender;
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.block.Block;
+import net.minecraft.component.DataComponentTypes;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.AxeItem;
@@ -60,6 +61,10 @@ public class Lavacastling implements ModInitializer {
 		Block block = world.getBlockState(hit.getBlockPos()).getBlock();
 		String blockId = Registries.BLOCK.getId(block).toString();
 
+		if (shouldCancelAttempt(player, hand)) {
+			return ActionResult.PASS;
+		}
+
 		// if the item is a pickaxe
 		if (stack.isIn(ItemTags.PICKAXES)) {
 			for (List<String> blockList : Config.chiselBlocks) {
@@ -83,6 +88,12 @@ public class Lavacastling implements ModInitializer {
 			}
 		}
 		return ActionResult.PASS;
+	}
+
+	private static boolean shouldCancelAttempt(PlayerEntity player, Hand hand) {
+		return hand.equals(Hand.MAIN_HAND)
+				&& player.getOffHandStack().contains(DataComponentTypes.BLOCKS_ATTACKS)
+				&& !player.shouldCancelInteraction();
 	}
 
 	private void onWorldLoad(MinecraftServer server) {
