@@ -3,7 +3,7 @@
 	"id": "lavacastling",
 	"version": "${version}",
 	"name": "Lavacastling",
-	"description": "Make cool bases with lavacasting!",
+	"description": "Makes lavacasting a viable way to make good looking bases by tweaking cobble generators and adding a vanilla friendly chisel mechanic for pickaxes.",
 	"authors": [
 		"Me!"
 	],
