@@ -1,4 +1,4 @@
-package litholark.lavacastling;
+package solirides.lavacastling;
 import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
 import net.fabricmc.loader.api.FabricLoader;

@@ -1,4 +1,4 @@
-package litholark.lavacastling;
+package solirides.lavacastling;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
@@ -28,6 +28,8 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 import org.slf4j.Logger;
@@ -64,6 +66,10 @@ public class Lavacastling implements ModInitializer {
 		if (shouldCancelAttempt(player, hand)) {
 			return ActionResult.PASS;
 		}
+//		if (player.canPlaceOn(hit.getBlockPos(), hit.getSide(), player.getOffHandStack()))
+//		{
+//			return ActionResult.PASS;
+//		}
 
 		// if the item is a pickaxe
 		if (stack.isIn(ItemTags.PICKAXES)) {

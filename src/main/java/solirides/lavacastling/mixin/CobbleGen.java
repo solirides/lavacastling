@@ -1,6 +1,6 @@
-package litholark.lavacastling.mixin;
+package solirides.lavacastling.mixin;
 
-import litholark.lavacastling.Config;
+import solirides.lavacastling.Config;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;

@@ -5,10 +5,10 @@
 	"name": "Lavacastling",
 	"description": "Makes lavacasting a viable way to make good looking bases by tweaking cobble generators and adding a vanilla friendly chisel mechanic for pickaxes.",
 	"authors": [
-		"Me!"
+		"Solirides"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
+		"homepage": "https://github.com/solirides/lavacastling",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"litholark.lavacastling.Lavacastling"
+			"solirides.lavacastling.Lavacastling"
 		]
 	},
 	"mixins": [
